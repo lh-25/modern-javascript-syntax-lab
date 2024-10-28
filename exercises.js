@@ -102,3 +102,18 @@ const sentence = (noun = `cat`, adjective = `white`) =>{
 sentence()
 console.log(sentence())
 console.log(sentence(`dog`,`gray`))
+
+// EXERCISE 9: Ternary operator
+// Convert the following `if...else` statement in to a ternary:
+
+let pizza = 'tasty';
+
+if (pizza === 'tasty') {
+  console.log('yum');
+} else {
+  console.log('yuck');
+}
+
+// Your code here
+let flavor = pizza === 'tasty'? 'yum' : 'yuck'
+console.log(flavor)
