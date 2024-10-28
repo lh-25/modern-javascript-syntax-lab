@@ -25,7 +25,7 @@ const nums = [13, 87, 2, 89, 12, 4, 90, 63];
 // console.log(secondTopping)
 
 
-// EXERCISE 2: Destructuring objects
+// EXERCISE 3: Destructuring objects
 // Given the following object, use destructuring to create variables `make` and `model` that will hold the respective values.
 
 const car = {
@@ -34,6 +34,19 @@ const car = {
 };
 
 // Your code here
-const {make, model} = car
-console.log(make)
-console.log(model)
+// const {make, model} = car
+// console.log(make)
+// console.log(model)
+
+
+
+// EXERCISE 4: Applying the spread operator on arrays
+
+// Duplicate the following array using the spread operator and assign it to `controversialPizzaToppings`. Then, log the variable.
+
+const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies'];
+
+// Your code here
+const controversialPizzaToppings = [...pizzaToppings] 
+
+console.log(controversialPizzaToppings)
