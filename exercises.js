@@ -6,11 +6,11 @@ const nums = [13, 87, 2, 89, 12, 4, 90, 63];
 // Create a new array where each value is multiplied by 2 and log the new array.
 
 // Your code here
-// const multipliedNums = nums.map((num) => {
-//   return num * 2
-// })
+const multipliedNums = nums.map((num) => {
+  return num * 2
+})
 
-// console.log(multipliedNums)
+console.log(multipliedNums)
 
 
 // EXERCISE 2: Array destructuring
@@ -19,10 +19,10 @@ const nums = [13, 87, 2, 89, 12, 4, 90, 63];
 // const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies'];
 
 // // Your code here
-// const [firstTopping, secondTopping] = pizzaToppings
+const [firstTopping, secondTopping] = pizzaToppings
 
-// console.log(firstTopping)
-// console.log(secondTopping)
+console.log(firstTopping)
+console.log(secondTopping)
 
 
 // EXERCISE 3: Destructuring objects
@@ -34,9 +34,9 @@ const nums = [13, 87, 2, 89, 12, 4, 90, 63];
 // };
 
 // Your code here
-// const {make, model} = car
-// console.log(make)
-// console.log(model)
+const {make, model} = car
+console.log(make)
+console.log(model)
 
 
 
@@ -47,9 +47,9 @@ const nums = [13, 87, 2, 89, 12, 4, 90, 63];
 const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies'];
 
 // Your code here
-// const controversialPizzaToppings = [...pizzaToppings] 
+const controversialPizzaToppings = [...pizzaToppings] 
 
-// console.log(controversialPizzaToppings)
+console.log(controversialPizzaToppings)
 
 // EXERCISE 5: Applying the spread operator on objects
 // Duplicate the following object and spread its values into a new variable `myCar`.
@@ -65,8 +65,8 @@ const car = {
 const myCar = {...car}
 myCar.model = 'q7'
 
-// console.log(car)
-// console.log(myCar)
+console.log(car)
+console.log(myCar)
 
 // EXERCISE 6: Dynamic keys in objects
 
@@ -75,12 +75,12 @@ myCar.model = 'q7'
 // Use propertyName as a dynamic key in userProfile, assigning a relevant value.
 
 // Your code here
-// const propertyName = 'username'
-// const userProfile = {
-// [propertyName]: 'lj24'
-// }
+const propertyName = 'username'
+const userProfile = {
+[propertyName]: 'lj24'
+}
 
-// console.log(userProfile)
+console.log(userProfile)
 
 // EXERCISE 7: Import and Export
 // ✅
@@ -100,23 +100,23 @@ const sentence = (noun = `cat`, adjective = `white`) =>{
   return `The ${noun} is ${adjective}`
 }
 sentence()
-// console.log(sentence())
-// console.log(sentence(`dog`,`gray`))
+console.log(sentence())
+console.log(sentence(`dog`,`gray`))
 
 // EXERCISE 9: Ternary operator
 // Convert the following `if...else` statement in to a ternary:
 
-// let pizza = 'tasty';
+let pizza = 'tasty';
 
-// if (pizza === 'tasty') {
-//   console.log('yum');
-// } else {
-//   console.log('yuck');
-// }
+if (pizza === 'tasty') {
+  console.log('yum');
+} else {
+  console.log('yuck');
+}
 
 // Your code here
-// let flavor = pizza === 'tasty'? 'yum' : 'yuck'
-// console.log(flavor)
+let flavor = pizza === 'tasty'? 'yum' : 'yuck'
+console.log(flavor)
 
 
 // EXERCISE 10: Boolean gate
@@ -136,7 +136,7 @@ const localLangConfig = null;  // Change to 'es', 'fr', etc., or keep it null
 const LANG = localLangConfig || 'en'
 
 // Log the result
-// console.log('Language setting:', LANG);
+console.log('Language setting:', LANG);
 
 // 2. SET WEBSITE THEME
 
@@ -149,3 +149,16 @@ const userSavedTheme = null; // Change to 'dark', 'contrast', etc., or keep it n
 const USER_THEME = userSavedTheme || 'light'
 // Log the result
 console.log('User theme setting:', USER_THEME);
+
+
+// EXERCISE 11: Optional chaining
+
+// Now check for `cat.age` on `adventurer`. See how it errors out? Use optional chaining in a console.log that it returns undefined instead.
+
+const adventurer = {
+  name: 'Alice',
+};
+
+let cat = adventurer.cat?.name; // Your code here
+
+console.log(cat);
