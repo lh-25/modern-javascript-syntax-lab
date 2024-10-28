@@ -81,3 +81,7 @@ myCar.model = 'q7'
 // }
 
 // console.log(userProfile)
+
+// EXERCISE 7: Import and Export
+// ✅
+
