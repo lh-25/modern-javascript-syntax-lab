@@ -85,3 +85,20 @@ myCar.model = 'q7'
 // EXERCISE 7: Import and Export
 // ✅
 
+// EXERCISE 8: Default parameters
+
+// Create a function that takes two parameters, `noun` and `adjective`, both with the following respective default values:
+
+// 1. `cat`
+
+// 2. `white`
+
+// The function should log a sentence 'The cat is white.' by default. The function should substitute the appropriate parameters when supplied arguments.
+
+// Your code here
+const sentence = (noun = `cat`, adjective = `white`) =>{
+  return `The ${noun} is ${adjective}`
+}
+sentence()
+console.log(sentence())
+console.log(sentence(`dog`,`gray`))
